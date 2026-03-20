@@ -1,0 +1,28 @@
+News Event Study – 6-hour Window Diagnostics
+============================================
+Probability dataset path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Event dataset path:       C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Manual News Event Identification\outputs\btc_news_events_final.csv
+
+Total probability rows loaded: 305695
+Total event rows loaded:       10
+
+Rows by regime after window assignment:
+  normal:    271508
+  pre_event: 17193
+  post_event:16994
+
+Timestamp parsing:
+  All probability timestamps parsed as UTC.
+  All event timestamps parsed as UTC.
+
+Script status: SUCCESS
+
+Outputs created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_regime_summary_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_category_summary_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_tests_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_level_summary_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\figures\event_time_abs_spread_6h.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\figures\abs_spread_by_regime_boxplot_6h.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\figures\abs_spread_by_category_6h.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_study_summary_6h.txt

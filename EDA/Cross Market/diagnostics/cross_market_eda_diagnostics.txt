@@ -1,0 +1,26 @@
+Cross-Market EDA – Diagnostics
+================================
+Master dataset path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Spot dataset path:   C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Spot Binance\spot_5m.parquet
+Futures dataset path:C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+News events path:    C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Manual News Event Identification\outputs\btc_news_events_final.csv
+
+Rows in merged cross-market dataset: 305695
+Timestamp range (UTC): 2026-01-01T00:05:00+00:00 to 2026-02-28T16:55:00+00:00
+Number of news events: 10
+
+Script status: SUCCESS
+
+Tables created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\tables\cross_market_summary.csv
+
+Figures created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\polymarket_vs_option_scatter.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\spread_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\absolute_spread_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\spread_vs_moneyness.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\spread_vs_maturity.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\spot_return_vs_prob_change.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\futures_return_vs_prob_change.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\example_event_probability_timeseries.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Cross Market\figures\btc_price_with_news_events.png

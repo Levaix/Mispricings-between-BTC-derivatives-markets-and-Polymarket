@@ -1,0 +1,26 @@
+Probability bounds check
+========================
+
+--- options_smile_event_probabilities.parquet ---
+
+min(prob_yes)   = 0.0005
+max(prob_yes)   = 0.9995
+
+min(prob_option) = 4.17782e-112
+max(prob_option) = 1
+
+Observations with prob_option out of [0, 1]:
+  prob_option < 0:  0
+  prob_option > 1:  0
+
+--- btc_probability_comparison_empirical_master.parquet ---
+
+min(prob_yes)   = 0.0005
+max(prob_yes)   = 0.9995
+
+min(prob_option) = 4.17782e-112
+max(prob_option) = 1
+
+Observations with prob_option out of [0, 1]:
+  prob_option < 0:  0
+  prob_option > 1:  0

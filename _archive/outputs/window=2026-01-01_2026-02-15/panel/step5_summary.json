@@ -1,0 +1,17 @@
+{
+  "n_markets": 506,
+  "n_expiry_dates": 46,
+  "min_points_per_market": 234,
+  "markets_below_min_points": 0,
+  "pct_missing_per_market_max": 84.55753892897835,
+  "pct_missing_per_market_median": 69.47900901684854,
+  "ts_utc_min": "2026-01-01 00:00:00+00:00",
+  "ts_utc_max": "2026-02-15 23:55:00+00:00",
+  "prob_yes_min": 0.0005,
+  "prob_yes_max": 0.9995,
+  "duplicate_rows": 0,
+  "qa_pass": true,
+  "n_rows_long": 6703488,
+  "n_rows_wide": 13248,
+  "n_ts_utc": 13248
+}

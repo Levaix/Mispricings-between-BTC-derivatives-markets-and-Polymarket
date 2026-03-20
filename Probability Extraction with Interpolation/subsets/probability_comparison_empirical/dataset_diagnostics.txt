@@ -1,0 +1,26 @@
+Empirical comparison master dataset — diagnostics
+==================================================
+Source file:          options_smile_event_probabilities.parquet
+Output file:          btc_probability_comparison_empirical_master.parquet
+Input row count:      1228495
+Output row count:     305695
+Retained share:       0.2488 (24.88%)
+
+probability_spread:
+  mean   = 0.015370
+  median = 0.010388
+  std    = 0.042494
+
+abs_spread:
+  mean   = 0.027330
+  median = 0.016280
+  std    = 0.035987
+
+prob_yes   min = 0.000500  max = 0.999500
+prob_option min = 0.000000  max = 1.000000
+iv_hat     min = 0.002506  max = 2.994421
+tau_years  min = 0.000010  max = 0.018132
+
+Unique event_date:   59
+Unique timestamps:    16663
+Unique strikes:      24

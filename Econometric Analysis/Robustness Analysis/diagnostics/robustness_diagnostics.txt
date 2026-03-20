@@ -1,0 +1,22 @@
+Robustness analysis diagnostics
+========================================
+Dataset path:            C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Total rows:              305695
+Number of regressions run: 9
+
+Rows used per subgroup:
+  moneyness/deep_OTM: observations = 35327
+  moneyness/near_ATM: observations = 267836
+  moneyness/ITM: observations = 2532
+  maturity/short_maturity: observations = 153371
+  maturity/medium_maturity: observations = 115171
+  maturity/long_maturity: observations = 37153
+  probability_level/low_probability: observations = 186753
+  probability_level/mid_probability: observations = 97468
+  probability_level/high_probability: observations = 21474
+
+Regression execution:    SUCCESS
+
+Outputs created:
+  - robustness_results.csv
+  - robustness_beta_comparison.png

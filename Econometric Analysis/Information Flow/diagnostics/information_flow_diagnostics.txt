@@ -1,0 +1,14 @@
+Information flow diagnostics
+========================================
+Dataset path:                            C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Total input rows:                        305695
+Rows used after differencing/lags:       304751
+Unique event_date clusters:              59
+Unique (event_date, strike_K) series:    472
+Lags built within (event_date, strike_K): YES
+Regressions ran successfully:            YES
+
+Outputs created:
+  - information_flow_results.csv
+  - information_flow_summary.txt
+  - information_flow_coefficients.png

@@ -1,0 +1,19 @@
+Descriptive statistics – thesis empirical dataset
+============================================================
+
+Dataset: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Total rows in dataset: 305695
+
+Statistics (rows = variables, columns = statistics):
+------------------------------------------------------------
+
+                    count       mean     median        std          min         p5         p25        p75       p95       max
+variable                                                                                                                     
+prob_yes           305695   0.253561      0.126   0.284193       0.0005      0.002       0.026      0.415       0.9    0.9995
+prob_option        305695   0.238191   0.106313   0.276324 4.17782e-112 0.00571034   0.0235957   0.385244  0.868115         1
+probability_spread 305695  0.0153703  0.0103881  0.0424939    -0.480392 -0.0296006 -0.00238169  0.0311786 0.0727542     0.547
+abs_spread         305695  0.0273298  0.0162797  0.0359869  4.57586e-08 0.00105914  0.00573119  0.0360121 0.0859843     0.547
+iv_hat             305695   0.556717     0.5018   0.251887   0.00250625      0.322     0.40751     0.6255    0.9812   2.99442
+tau_years          305695 0.00629496 0.00546043 0.00418357  9.51294e-06 0.00120814  0.00266362 0.00898021 0.0151731 0.0181317
+moneyness          305695   0.959008   0.960239  0.0514594     0.696639   0.872751    0.929264   0.991416   1.03737   1.20498
+days_to_expiry     305695    2.29766    1.99306      1.527   0.00347222   0.440972    0.972222    3.27778   5.53819   6.61806

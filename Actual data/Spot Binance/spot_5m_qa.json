@@ -1,0 +1,19 @@
+{
+  "rows": 16992,
+  "start_timestamp_utc": "2026-01-01T00:00:00+00:00",
+  "end_timestamp_utc": "2026-02-28T23:55:00+00:00",
+  "expected_bars": 16992,
+  "missing_bars": 0,
+  "duplicate_timestamps": 0,
+  "bad_alignment_count": 0,
+  "bad_open_count": 0,
+  "bad_high_count": 0,
+  "bad_low_count": 0,
+  "bad_close_count": 0,
+  "bad_volume_count": 0,
+  "close_min": 60081.74,
+  "close_max": 97744.45,
+  "volume_min": 1.17029,
+  "volume_max": 4240.74218,
+  "status": "ok"
+}

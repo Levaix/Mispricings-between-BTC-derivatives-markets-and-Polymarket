@@ -1,0 +1,31 @@
+News Event Study – Summary
+===================================
+
+Number of events: 10
+  crypto_bitcoin: 5
+  macro:          5
+
+Row counts by regime:
+  normal:    246734
+  pre_event: 30103
+  post_event:28858
+
+Mean |probability spread| by regime:
+  normal   : 0.027601
+  pre_event: 0.026313
+  post_event: 0.026074
+
+Key t-tests on abs_spread (difference in means, Welch t-tests):
+- A_pre_vs_normal: pre_event vs normal, diff = -0.001288, t = -6.686, p = 2.32e-11, n1 = 30103, n2 = 246734
+- B_post_vs_normal: post_event vs normal, diff = -0.001527, t = -7.306, p = 2.8e-13, n1 = 28858, n2 = 246734
+- C_post_vs_pre: post_event vs pre_event, diff = -0.000239, t = -0.903, p = 0.366, n1 = 28858, n2 = 30103
+- D_crypto_post_vs_macro_post: crypto_bitcoin_post vs macro_post, diff = 0.003593, t = 9.210, p = 3.46e-20, n1 = 14393, n2 = 14465
+
+Outputs created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\tables\news_event_regime_summary.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\tables\news_event_category_summary.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\tables\news_event_tests.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\tables\news_event_level_summary.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\figures\event_time_abs_spread.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\figures\abs_spread_by_regime_boxplot.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\figures\abs_spread_by_category.png

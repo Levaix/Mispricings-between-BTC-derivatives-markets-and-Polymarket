@@ -1,0 +1,34 @@
+Manual News Event Identification — Summary
+============================================
+
+Purpose: Manually identified major news shocks between 2026-01-01 and 2026-02-28
+for Bitcoin-focused event-study analysis (probability spreads in [-12h, +12h] window).
+
+Number of crypto/bitcoin events:  5
+Number of macro events:          5
+Total events:                   10
+
+Event date range: 2026-01-06 to 2026-02-18
+
+Selected event dates (one event per day):
+  2026-01-06  E001  crypto_bitcoin  Morgan Stanley spot Bitcoin and Solana ETF filings
+  2026-01-26  E002  crypto_bitcoin  ARK Invest CoinDesk 20 crypto index ETFs
+  2026-01-28  E003  macro          FOMC holds policy rate steady
+  2026-02-02  E004  crypto_bitcoin  Bitcoin rebound above 75k liquidity
+  2026-02-03  E005  crypto_bitcoin  Major tokens relief rally after selloff
+  2026-02-05  E006  macro          JOLTS job openings fall to lowest since 2020
+  2026-02-10  E007  crypto_bitcoin  U.S. Bitcoin ETFs back-to-back inflows
+  2026-02-11  E008  macro          January payrolls beat; unemployment falls
+  2026-02-13  E009  macro          January CPI and core CPI release
+  2026-02-18  E010  macro          Fed January minutes mention rate-hike scenario
+
+All events occur on different days: YES (10 distinct event dates).
+
+Sources:
+  Crypto/bitcoin events: CoinDesk (5).
+  Macro events: Bloomberg (5).
+
+Output file: pipeline/Manual News Event Identification/outputs/btc_news_events_final.csv
+
+Fields in CSV: event_id, event_timestamp_utc, event_date, category, event_label,
+  source, headline, url, short_reason_for_inclusion.

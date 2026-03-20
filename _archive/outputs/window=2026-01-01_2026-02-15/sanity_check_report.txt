@@ -1,0 +1,62 @@
+============================================================
+SANITY CHECK SUMMARY — window=2026-01-01_2026-02-15
+============================================================
+
+A) Master grid correctness
+----------------------------------------
+  n_rows: 13248
+  open_time min (UTC): 2026-01-01T00:00:00.000Z
+  open_time max (UTC): 2026-02-15T23:55:00.000Z
+  expected_n_rows (5m grid 2026-01-01 00:00 .. 2026-02-15 23:55): 13248
+  duplicates (open_time): 0
+  PASS
+
+B) Missingness of key price columns
+----------------------------------------
+  spot_close: pct_nan=0.0000%, n_nan=0
+  perp_close: pct_nan=0.0000%, n_nan=0
+  index_close: pct_nan=0.0000%, n_nan=0
+  mark_close: pct_nan=0.0000%, n_nan=0
+  PASS
+
+C) Spot vs index and perp vs index spread sanity
+----------------------------------------
+  spread_spot_index: mean=-0.165802, std=10.434545, min=-125.351304, max=189.243841
+  spread_spot_index: 1%=-30.052741, 99%=30.728124
+  spread_perp_index: mean=-39.429184, std=12.867954, min=-164.211304, max=167.763841
+  spread_perp_index: 1%=-74.107213, 99%=-3.345102
+  correlation(spot_close, index_close): 0.999999
+  (no PASS/FAIL; informational)
+
+D) Funding sanity
+----------------------------------------
+  funding_rate_5m pct_nan: 0.0075%
+  count unique fundingTime_last: 138
+  fundingTime_last min (UTC): 2026-01-01T00:00:00.008Z
+  fundingTime_last max (UTC): 2026-02-15T16:00:00.000Z
+  violations (fundingTime_last > open_time): 0
+  first 5 funding rate change open_time (UTC): ['2026-01-01T00:05:00.000Z', '2026-01-01T16:05:00.000Z', '2026-01-02T00:05:00.000Z', '2026-01-02T08:05:00.000Z', '2026-01-02T16:00:00.000Z']
+
+E) Options panel sanity (liquid aligned)
+----------------------------------------
+  n_rows: 227579
+  n_unique_instruments: 37
+  open_time min (UTC): 2026-01-01T00:00:00.000Z
+  open_time max (UTC): 2026-02-15T23:55:00.000Z
+  duplicates (instrument_name, open_time): 0
+  pct_nan index_close: 0.0000%
+  pct_nan moneyness_proxy: 0.0000%
+  share of rows with volume>0: 6.50%
+  top 5 instruments by total_volume:
+    BTC-27MAR26-70000-P: total_volume=16303, n_nonzero_bars=1273
+    BTC-27MAR26-65000-P: total_volume=12707, n_nonzero_bars=1369
+    BTC-27FEB26-70000-P: total_volume=10783, n_nonzero_bars=1168
+    BTC-27FEB26-65000-P: total_volume=8358, n_nonzero_bars=1044
+    BTC-27FEB26-70000-C: total_volume=4060, n_nonzero_bars=561
+
+F) File existence and sizes (MB)
+----------------------------------------
+  master_panel_5m.parquet: 1.37 MB
+  options_panel_long_5m_liquid_aligned.parquet: 2.35 MB
+
+============================================================

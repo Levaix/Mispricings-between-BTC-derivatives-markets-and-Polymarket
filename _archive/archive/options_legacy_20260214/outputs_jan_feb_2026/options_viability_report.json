@@ -1,0 +1,38 @@
+{
+  "pass": true,
+  "reasons": null,
+  "total_rows": 457363,
+  "unique_instruments": 127,
+  "earliest_open_time_utc": "2026-01-01T00:00:00.000Z",
+  "latest_open_time_utc": "2026-02-15T23:55:00.000Z",
+  "n_instruments_with_500_plus_bars": 99,
+  "median_zero_volume_share": 0.9606389047347405,
+  "window_start_utc": "2026-01-01T00:00:00Z",
+  "window_end_utc": "2026-02-15T23:55:00Z",
+  "most_liquid_options": [
+    {"instrument_name": "BTC-27MAR26-70000-P", "total_volume": 16303.4, "n_nonzero_bars": 1273, "n_bars": 13248, "trade_bar_share_pct": 9.61},
+    {"instrument_name": "BTC-27MAR26-65000-P", "total_volume": 12706.6, "n_nonzero_bars": 1369, "n_bars": 13248, "trade_bar_share_pct": 10.33},
+    {"instrument_name": "BTC-27FEB26-70000-P", "total_volume": 10782.8, "n_nonzero_bars": 1168, "n_bars": 13248, "trade_bar_share_pct": 8.82},
+    {"instrument_name": "BTC-27FEB26-65000-P", "total_volume": 8357.8, "n_nonzero_bars": 1044, "n_bars": 13248, "trade_bar_share_pct": 7.88},
+    {"instrument_name": "BTC-25DEC26-65000-P", "total_volume": 7774.7, "n_nonzero_bars": 141, "n_bars": 9832, "trade_bar_share_pct": null},
+    {"instrument_name": "BTC-27FEB26-70000-C", "total_volume": 4059.7, "n_nonzero_bars": 561, "n_bars": 6231, "trade_bar_share_pct": 9.00},
+    {"instrument_name": "BTC-26JUN26-65000-P", "total_volume": 3702.1, "n_nonzero_bars": 295, "n_bars": 5549, "trade_bar_share_pct": 5.32},
+    {"instrument_name": "BTC-27FEB26-63000-P", "total_volume": 3065.5, "n_nonzero_bars": 139, "n_bars": 2783, "trade_bar_share_pct": null},
+    {"instrument_name": "BTC-26JUN26-70000-P", "total_volume": 2641.5, "n_nonzero_bars": 599, "n_bars": 13248, "trade_bar_share_pct": 4.52},
+    {"instrument_name": "BTC-27FEB26-72000-C", "total_volume": 2504.8, "n_nonzero_bars": 401, "n_bars": 3278, "trade_bar_share_pct": 12.23},
+    {"instrument_name": "BTC-20FEB26-70000-C", "total_volume": 2484.8, "n_nonzero_bars": 329, "n_bars": 4407, "trade_bar_share_pct": 7.47},
+    {"instrument_name": "BTC-27MAR26-70000-C", "total_volume": 2239.1, "n_nonzero_bars": 407, "n_bars": 13248, "trade_bar_share_pct": 3.07},
+    {"instrument_name": "BTC-20FEB26-70000-P", "total_volume": 2221.3, "n_nonzero_bars": 364, "n_bars": 4872, "trade_bar_share_pct": 7.47},
+    {"instrument_name": "BTC-27MAR26-72000-C", "total_volume": 1927.9, "n_nonzero_bars": 344, "n_bars": 3923, "trade_bar_share_pct": 8.77},
+    {"instrument_name": "BTC-20FEB26-64000-P", "total_volume": 1864.0, "n_nonzero_bars": 248, "n_bars": 3516, "trade_bar_share_pct": 7.05}
+  ],
+  "liquidity_by_expiry": [
+    {"expiry_utc": "2026-02-20T08:00:00.000Z", "n_instruments": 10, "n_calls": 4, "n_puts": 6, "strike_count": 9, "total_volume": 13022.0, "median_trade_bar_share_pct": 7.22},
+    {"expiry_utc": "2026-02-27T08:00:00.000Z", "n_instruments": 9, "n_calls": 3, "n_puts": 6, "strike_count": 7, "total_volume": 31240.2, "median_trade_bar_share_pct": 8.65},
+    {"expiry_utc": "2026-03-27T08:00:00.000Z", "n_instruments": 10, "n_calls": 3, "n_puts": 7, "strike_count": 7, "total_volume": 38091.5, "median_trade_bar_share_pct": 9.10},
+    {"expiry_utc": "2026-04-24T08:00:00.000Z", "n_instruments": 3, "n_calls": 2, "n_puts": 1, "strike_count": 2, "total_volume": 3627.3, "median_trade_bar_share_pct": 6.58},
+    {"expiry_utc": "2026-06-26T08:00:00.000Z", "n_instruments": 3, "n_calls": 1, "n_puts": 2, "strike_count": 2, "total_volume": 7227.0, "median_trade_bar_share_pct": 4.52},
+    {"expiry_utc": "2026-09-25T08:00:00.000Z", "n_instruments": 1, "n_calls": 0, "n_puts": 1, "strike_count": 1, "total_volume": 581.3, "median_trade_bar_share_pct": 1.56},
+    {"expiry_utc": "2026-12-25T08:00:00.000Z", "n_instruments": 1, "n_calls": 0, "n_puts": 1, "strike_count": 1, "total_volume": 1083.4, "median_trade_bar_share_pct": 1.77}
+  ]
+}

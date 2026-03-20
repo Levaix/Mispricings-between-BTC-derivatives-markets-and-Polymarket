@@ -1,0 +1,25 @@
+Baseline regression: prob_yes = alpha + beta * prob_option + error
+========================================================================
+Dataset:       C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Observations:  305695
+Event clusters (event_date): 59
+
+Coefficients (cluster-robust SE by event_date):
+  alpha (const):       0.011307
+  beta (prob_option):  1.017059
+
+R-squared:             0.977917
+Adjusted R-squared:    0.977917
+
+Hypothesis tests:
+  H0: alpha = 0
+    t-statistic: 10.277527
+    p-value:     8.89813e-25
+  H0: beta = 1
+    t-statistic: 4.970474
+    p-value:     6.67896e-07
+
+Economic interpretation:
+- alpha measures systematic bias in Polymarket probabilities when option-implied probabilities are zero.
+- beta measures how sensitive Polymarket probabilities are to changes in option-implied probabilities. beta = 1 and alpha = 0 would mean perfect one-to-one alignment.
+- The 45-degree line in the plot represents this benchmark; the fitted regression line shows deviations from it.

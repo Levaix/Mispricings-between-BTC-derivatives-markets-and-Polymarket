@@ -1,0 +1,13 @@
+Joint lead–lag diagnostics
+========================================
+Probability dataset:          C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Futures dataset:              C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+Rows after merge:             305695
+Rows used in regressions:     304751
+Unique event_date clusters:   59
+Regressions ran successfully: YES
+
+Outputs created:
+  - joint_lead_lag_results.csv
+  - joint_lead_lag_summary.txt
+  - joint_information_flow_coefficients.png

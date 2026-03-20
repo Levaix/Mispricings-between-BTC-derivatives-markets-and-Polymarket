@@ -1,0 +1,15 @@
+Spot EDA – Diagnostics
+========================
+Detected spot dataset path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Spot Binance\spot_5m.parquet
+Row count: 16992
+Timestamp range: 2026-01-01T00:00:00+00:00 to 2026-02-28T23:55:00+00:00
+
+Script status: SUCCESS
+
+Output tables:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Spot\tables\spot_summary_stats.csv
+
+Output figures:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Spot\figures\spot_price_timeseries.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Spot\figures\spot_return_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Spot\figures\spot_rolling_volatility.png

@@ -1,0 +1,37 @@
+Polymarket EDA – Diagnostics
+================================
+Contracts metadata path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Polymarket\polymarket_contracts_metadata.parquet
+Probabilities long path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Polymarket\polymarket_probabilities_5m_long.parquet
+Probabilities wide path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Polymarket\polymarket_probabilities_5m_wide.parquet
+
+Contracts rows: 649
+Probabilities long rows: 1228495
+Probabilities wide rows: 16880
+
+Timestamp range (long): 2026-01-01T00:00:00+00:00 to 2026-02-28T16:55:00+00:00
+Timestamp range (wide): 2026-01-01T00:00:00+00:00 to 2026-02-28T16:55:00+00:00
+
+Number of markets (contracts rows): 649
+Number of strikes: 27
+Number of event dates: 59
+Probability min/max (prob_yes): 0.000500 / 0.999500
+
+Script status: SUCCESS
+
+Tables created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\polymarket_probability_summary.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\polymarket_probability_summary.md
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\polymarket_market_structure.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\polymarket_market_structure.md
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\strike_distribution.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\strike_distribution.md
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\tables\polymarket_eda_summary.md
+
+Figures created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\probability_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\probability_timeseries_example.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\probability_vs_strike.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\strike_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\event_date_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\probability_heatmap.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Polymarket\figures\example_market_evolution.png

@@ -1,0 +1,10 @@
+Descriptive plots summary
+==================================================
+Dataset path:          C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Total rows:            305695
+Number of figures:     3
+
+Figures:
+  - probability_distributions.png
+  - iv_hat_distribution.png
+  - days_to_expiry_distribution.png

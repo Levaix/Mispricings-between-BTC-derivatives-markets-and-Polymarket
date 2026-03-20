@@ -1,0 +1,23 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Polymarket API cache (reproducible by re-running Step 4)
+data/polymarket/cache/
+
+# Done-chunks manifest (reproducible by re-running downloaders)
+data/_manifest/
+
+# Optional: uncomment to avoid committing large generated outputs
+# outputs/**/*.parquet
+# outputs/**/*.csv
+# outputs_jan_feb_2026/*.parquet
+# outputs_jan_feb_2026/*.csv
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

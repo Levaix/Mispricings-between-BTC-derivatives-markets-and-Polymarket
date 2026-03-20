@@ -1,0 +1,372 @@
+{
+  "total_rows": 1228495,
+  "usable_iv_rows": 253904,
+  "pct_rows_with_iv": 20.6679,
+  "timestamp_diagnostics": {
+    "total_unique_timestamps": 16880,
+    "timestamps_with_iv": 15919,
+    "timestamps_without_iv": 961,
+    "pct_timestamps_with_iv": 94.3069
+  },
+  "iv_density_per_timestamp": {
+    "avg_usable_iv_per_timestamp": 15.0417,
+    "median_usable_iv_per_timestamp": 14.0,
+    "max_usable_iv_per_timestamp": 45
+  },
+  "daily_coverage": [
+    {
+      "date": "2026-01-01",
+      "timestamps": 288,
+      "timestamps_with_iv": 267,
+      "pct": 92.7083
+    },
+    {
+      "date": "2026-01-02",
+      "timestamps": 288,
+      "timestamps_with_iv": 272,
+      "pct": 94.4444
+    },
+    {
+      "date": "2026-01-03",
+      "timestamps": 287,
+      "timestamps_with_iv": 220,
+      "pct": 76.6551
+    },
+    {
+      "date": "2026-01-04",
+      "timestamps": 288,
+      "timestamps_with_iv": 252,
+      "pct": 87.5
+    },
+    {
+      "date": "2026-01-05",
+      "timestamps": 288,
+      "timestamps_with_iv": 285,
+      "pct": 98.9583
+    },
+    {
+      "date": "2026-01-06",
+      "timestamps": 287,
+      "timestamps_with_iv": 277,
+      "pct": 96.5157
+    },
+    {
+      "date": "2026-01-07",
+      "timestamps": 287,
+      "timestamps_with_iv": 285,
+      "pct": 99.3031
+    },
+    {
+      "date": "2026-01-08",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-01-09",
+      "timestamps": 288,
+      "timestamps_with_iv": 243,
+      "pct": 84.375
+    },
+    {
+      "date": "2026-01-10",
+      "timestamps": 288,
+      "timestamps_with_iv": 193,
+      "pct": 67.0139
+    },
+    {
+      "date": "2026-01-11",
+      "timestamps": 288,
+      "timestamps_with_iv": 183,
+      "pct": 63.5417
+    },
+    {
+      "date": "2026-01-12",
+      "timestamps": 288,
+      "timestamps_with_iv": 253,
+      "pct": 87.8472
+    },
+    {
+      "date": "2026-01-13",
+      "timestamps": 287,
+      "timestamps_with_iv": 262,
+      "pct": 91.2892
+    },
+    {
+      "date": "2026-01-14",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-01-15",
+      "timestamps": 288,
+      "timestamps_with_iv": 282,
+      "pct": 97.9167
+    },
+    {
+      "date": "2026-01-16",
+      "timestamps": 288,
+      "timestamps_with_iv": 286,
+      "pct": 99.3056
+    },
+    {
+      "date": "2026-01-17",
+      "timestamps": 288,
+      "timestamps_with_iv": 237,
+      "pct": 82.2917
+    },
+    {
+      "date": "2026-01-18",
+      "timestamps": 288,
+      "timestamps_with_iv": 143,
+      "pct": 49.6528
+    },
+    {
+      "date": "2026-01-19",
+      "timestamps": 287,
+      "timestamps_with_iv": 286,
+      "pct": 99.6516
+    },
+    {
+      "date": "2026-01-20",
+      "timestamps": 288,
+      "timestamps_with_iv": 287,
+      "pct": 99.6528
+    },
+    {
+      "date": "2026-01-21",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-01-22",
+      "timestamps": 288,
+      "timestamps_with_iv": 276,
+      "pct": 95.8333
+    },
+    {
+      "date": "2026-01-23",
+      "timestamps": 287,
+      "timestamps_with_iv": 258,
+      "pct": 89.8955
+    },
+    {
+      "date": "2026-01-24",
+      "timestamps": 288,
+      "timestamps_with_iv": 255,
+      "pct": 88.5417
+    },
+    {
+      "date": "2026-01-25",
+      "timestamps": 288,
+      "timestamps_with_iv": 283,
+      "pct": 98.2639
+    },
+    {
+      "date": "2026-01-26",
+      "timestamps": 288,
+      "timestamps_with_iv": 273,
+      "pct": 94.7917
+    },
+    {
+      "date": "2026-01-27",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-01-28",
+      "timestamps": 288,
+      "timestamps_with_iv": 287,
+      "pct": 99.6528
+    },
+    {
+      "date": "2026-01-29",
+      "timestamps": 286,
+      "timestamps_with_iv": 286,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-01-30",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-01-31",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-01",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-02",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-03",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-04",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-05",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-06",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-07",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-08",
+      "timestamps": 288,
+      "timestamps_with_iv": 281,
+      "pct": 97.5694
+    },
+    {
+      "date": "2026-02-09",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-10",
+      "timestamps": 288,
+      "timestamps_with_iv": 281,
+      "pct": 97.5694
+    },
+    {
+      "date": "2026-02-11",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-12",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-13",
+      "timestamps": 288,
+      "timestamps_with_iv": 286,
+      "pct": 99.3056
+    },
+    {
+      "date": "2026-02-14",
+      "timestamps": 286,
+      "timestamps_with_iv": 250,
+      "pct": 87.4126
+    },
+    {
+      "date": "2026-02-15",
+      "timestamps": 288,
+      "timestamps_with_iv": 264,
+      "pct": 91.6667
+    },
+    {
+      "date": "2026-02-16",
+      "timestamps": 288,
+      "timestamps_with_iv": 265,
+      "pct": 92.0139
+    },
+    {
+      "date": "2026-02-17",
+      "timestamps": 288,
+      "timestamps_with_iv": 287,
+      "pct": 99.6528
+    },
+    {
+      "date": "2026-02-18",
+      "timestamps": 287,
+      "timestamps_with_iv": 287,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-19",
+      "timestamps": 288,
+      "timestamps_with_iv": 287,
+      "pct": 99.6528
+    },
+    {
+      "date": "2026-02-20",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-21",
+      "timestamps": 288,
+      "timestamps_with_iv": 284,
+      "pct": 98.6111
+    },
+    {
+      "date": "2026-02-22",
+      "timestamps": 288,
+      "timestamps_with_iv": 286,
+      "pct": 99.3056
+    },
+    {
+      "date": "2026-02-23",
+      "timestamps": 283,
+      "timestamps_with_iv": 283,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-24",
+      "timestamps": 288,
+      "timestamps_with_iv": 288,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-25",
+      "timestamps": 286,
+      "timestamps_with_iv": 286,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-26",
+      "timestamps": 286,
+      "timestamps_with_iv": 286,
+      "pct": 100.0
+    },
+    {
+      "date": "2026-02-27",
+      "timestamps": 288,
+      "timestamps_with_iv": 254,
+      "pct": 88.1944
+    },
+    {
+      "date": "2026-02-28",
+      "timestamps": 204,
+      "timestamps_with_iv": 145,
+      "pct": 71.0784
+    }
+  ]
+}

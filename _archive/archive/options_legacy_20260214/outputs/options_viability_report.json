@@ -1,0 +1,108 @@
+{
+  "window_start_utc": "2025-10-01T00:00:00Z",
+  "window_end_utc": "2025-12-31T23:55:00Z",
+  "risk1_check1a": {
+    "pass": true,
+    "reasons": null,
+    "count_selected": 46,
+    "expiry_min_utc": "2026-02-27T08:00:00.000Z",
+    "expiry_median_utc": "2026-06-26T08:00:00.000Z",
+    "expiry_max_utc": "2026-12-25T08:00:00.000Z",
+    "expiry_histogram_year_month": {
+      "2026-02": 8,
+      "2026-03": 10,
+      "2026-06": 10,
+      "2026-09": 10,
+      "2026-12": 8
+    },
+    "creation_min_utc": "2025-03-27T08:01:00.000Z",
+    "creation_median_utc": "2025-09-25T08:00:12.000Z",
+    "creation_max_utc": "2025-12-26T06:43:00.000Z",
+    "share_creation_missing_or_zero_pct": 0.0,
+    "share_creation_after_end_pct": 0.0,
+    "share_expiry_before_start_pct": 0.0
+  },
+  "risk1_check1b": {
+    "pass": false,
+    "reasons": [
+      "most instruments have ~100% zero volume"
+    ],
+    "total_rows": 840976,
+    "unique_instruments": 40,
+    "earliest_open_time_utc": "2025-10-01T00:00:00.000Z",
+    "latest_open_time_utc": "2025-12-31T22:55:00.000Z",
+    "n_instruments_with_500_plus_bars": 40,
+    "median_zero_volume_share_across_instruments": 0.9936
+  },
+  "risk1": "FAIL",
+  "risk2_check2a": {
+    "pass": true,
+    "reason": null,
+    "index_close_nan_share_pct": 0.0,
+    "index_close_min": 80929.30956522,
+    "index_close_median": 95670.02380435,
+    "index_close_max": 126010.16913043
+  },
+  "risk2_check2b": {
+    "pass": true,
+    "reasons": null,
+    "atm_proxy_at_first_bar": 114187.18130435,
+    "first_bar_open_time_utc": "2025-10-01T00:00:00.000Z",
+    "median_strike_distance_pct": 9.47,
+    "p90_strike_distance_pct": 18.23,
+    "worst_10_strike_distance": [
+      {
+        "instrument_name": "BTC-27MAR26-135000-C",
+        "strike": 135000.0,
+        "strike_distance_pct": 18.23
+      },
+      {
+        "instrument_name": "BTC-27MAR26-135000-P",
+        "strike": 135000.0,
+        "strike_distance_pct": 18.23
+      },
+      {
+        "instrument_name": "BTC-26JUN26-135000-C",
+        "strike": 135000.0,
+        "strike_distance_pct": 18.23
+      },
+      {
+        "instrument_name": "BTC-26JUN26-135000-P",
+        "strike": 135000.0,
+        "strike_distance_pct": 18.23
+      },
+      {
+        "instrument_name": "BTC-25SEP26-135000-C",
+        "strike": 135000.0,
+        "strike_distance_pct": 18.23
+      },
+      {
+        "instrument_name": "BTC-25SEP26-135000-P",
+        "strike": 135000.0,
+        "strike_distance_pct": 18.23
+      },
+      {
+        "instrument_name": "BTC-27FEB26-130000-C",
+        "strike": 130000.0,
+        "strike_distance_pct": 13.85
+      },
+      {
+        "instrument_name": "BTC-27FEB26-130000-P",
+        "strike": 130000.0,
+        "strike_distance_pct": 13.85
+      },
+      {
+        "instrument_name": "BTC-27MAR26-130000-C",
+        "strike": 130000.0,
+        "strike_distance_pct": 13.85
+      },
+      {
+        "instrument_name": "BTC-27MAR26-130000-P",
+        "strike": 130000.0,
+        "strike_distance_pct": 13.85
+      }
+    ],
+    "fallback_95k_likely_warning": false
+  },
+  "risk2": "PASS"
+}

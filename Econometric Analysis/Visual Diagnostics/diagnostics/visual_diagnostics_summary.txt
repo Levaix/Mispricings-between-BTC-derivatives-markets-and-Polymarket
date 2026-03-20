@@ -1,0 +1,18 @@
+Visual diagnostics summary
+============================================================
+
+Global figures (overlap sample):
+  Dataset path:           C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+  Total rows:             305695
+  Rows with prob_option:  305695
+
+Event-level figures (full Polymarket path):
+  Dataset path:           C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket\options_smile_event_probabilities.parquet
+  Total rows:             1228495
+  Rows with prob_option:  305695
+  Unique event_date:      59
+  Unique strikes:         27
+
+Figures:
+  Event-strike figures generated:  649
+  Total figures (global + events): 651

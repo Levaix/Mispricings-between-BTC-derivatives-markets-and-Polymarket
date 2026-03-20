@@ -1,0 +1,12 @@
+Spread significance diagnostics
+========================================
+Dataset path:                 C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Rows loaded:                  305695
+Rows used in test:            305695
+Unique event_date clusters:   59
+Test executed successfully:   YES
+
+Outputs created:
+  - spread_significance_results.csv
+  - spread_significance_summary.txt
+  - spread_distribution_with_mean.png

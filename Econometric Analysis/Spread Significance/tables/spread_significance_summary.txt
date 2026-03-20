@@ -1,0 +1,21 @@
+Spread Significance Test
+============================================================
+Dataset: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+
+Descriptive statistics for probability_spread:
+  Mean:    0.015370
+  Median:  0.010388
+  Std dev: 0.042494
+  Std error of mean (i.i.d.): 0.000077
+  Observations: 305695
+
+Cluster-robust one-sample t-test (H0: mean spread = 0):
+  Mean spread (mû):     0.015370
+  Clustered std error:   0.000816
+  t-statistic:           18.840580
+  p-value:               3.511e-79
+  95% CI for mean:       [0.013771, 0.016969]
+
+Event clusters (event_date): 59
+Note: Standard errors and test statistics are clustered by event_date
+to allow arbitrary correlation of spreads within each event.

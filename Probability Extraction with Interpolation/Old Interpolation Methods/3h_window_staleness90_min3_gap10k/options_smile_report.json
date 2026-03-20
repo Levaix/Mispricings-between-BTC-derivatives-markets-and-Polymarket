@@ -1,0 +1,67 @@
+{
+  "options_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Options Deribit\\options_5m_agg\\agg_5m_merged.parquet",
+  "events_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Polymarket\\polymarket_contracts_metadata.parquet",
+  "polymarket_long_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Polymarket\\polymarket_probabilities_5m_long.parquet",
+  "parse_stats": {
+    "parse_fail_rows": 0,
+    "bad_expiry_rows": 0
+  },
+  "iv_stats": {
+    "iv_median_raw": 49.199999999999996,
+    "iv_scale_decision": "percent_to_decimal",
+    "iv_scale_factor": 0.01
+  },
+  "summary": {
+    "latest_trade_per_strike_rule": true,
+    "total_windows": 396931,
+    "fit_success_count": 294893,
+    "fit_fail_counts": {
+      "too_few_strikes": 65884,
+      "range_too_small": 19452,
+      "no_iv_data": 16702
+    },
+    "n_event_rows": 1228495,
+    "row_count_polymarket_long": 1228495,
+    "row_count_event_iv_output": 1228495,
+    "row_count_match_ok": true,
+    "duplicate_event_keys": 0,
+    "invalid_expiry_assignments": 0,
+    "out_of_range_count": 349232,
+    "no_snapshot_fit_count": 602120,
+    "usable_iv_count": 277143,
+    "pct_rows_usable_iv": 22.56,
+    "pct_rows_out_of_range": 28.43,
+    "pct_rows_no_snapshot_fit": 49.01,
+    "same_day_expiry_count": 1159298,
+    "next_day_expiry_count": 69197,
+    "event_rows_next_day_expiry_no_fit": 9519,
+    "snapshot_stats_sanity": {
+      "n_unique_timestamps": 16906,
+      "n_snapshot_rows": 396931,
+      "avg_rows_per_timestamp": 23.48
+    },
+    "validation_one_row_per_timestamp": false,
+    "validation_warning": null,
+    "expiry_switch": {
+      "polymarket_daily_expiry_switch_rule": true,
+      "description": "For Polymarket event date Z: option expiry = Z if t <= Z 08:00 UTC, else Z+1.",
+      "event_rows_same_day_expiry": 1159298,
+      "event_rows_next_day_expiry": 69197,
+      "event_rows_next_day_expiry_no_fit": 9519
+    },
+    "validation_expiry_warning": null,
+    "staleness_diagnostics": {
+      "total_candidate_strikes_before_deduplication": 12606202,
+      "total_strikes_after_reducing_to_latest_trade_per_strike": 3763252,
+      "total_retained_strikes_after_staleness_filter": 2686129,
+      "total_discarded_stale_strikes": 1077123,
+      "avg_retained_strikes_per_snapshot": 6.7672,
+      "avg_discarded_stale_strikes_per_snapshot": 2.7136
+    },
+    "strike_gap_diagnostics": {
+      "in_range_gap_rule_fail_count": 4317,
+      "avg_local_gap_successful_interpolation": 1016.7441,
+      "max_local_gap_successful_interpolation": 10000.0
+    }
+  }
+}

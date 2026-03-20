@@ -1,0 +1,66 @@
+{
+  "input_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\analysis\\3h_window_staleness120_min3_gap10k\\options_smile_event_iv.parquet",
+  "total_rows": 1228495,
+  "usable_iv_count": 308728,
+  "summary_statistics": {
+    "count": 308728,
+    "min": 0.0,
+    "max": 9.99,
+    "mean": 0.561350380409432,
+    "median": 0.5006,
+    "p1": 0.1502635,
+    "p5": 0.3144,
+    "p25": 0.4059,
+    "p50": 0.5006,
+    "p75": 0.6255,
+    "p95": 0.9945917066625296,
+    "p99": 1.7467999999999997
+  },
+  "bucket_distribution": [
+    {
+      "bucket": "<=0",
+      "count": 2222,
+      "pct": 0.7197
+    },
+    {
+      "bucket": "0-0.05",
+      "count": 104,
+      "pct": 0.0337
+    },
+    {
+      "bucket": "0.05-0.1",
+      "count": 236,
+      "pct": 0.0764
+    },
+    {
+      "bucket": "0.1-0.2",
+      "count": 1497,
+      "pct": 0.4849
+    },
+    {
+      "bucket": "0.2-0.5",
+      "count": 149976,
+      "pct": 48.5787
+    },
+    {
+      "bucket": "0.5-1",
+      "count": 139608,
+      "pct": 45.2204
+    },
+    {
+      "bucket": "1-2",
+      "count": 12935,
+      "pct": 4.1898
+    },
+    {
+      "bucket": "2-3",
+      "count": 1414,
+      "pct": 0.458
+    },
+    {
+      "bucket": ">3",
+      "count": 736,
+      "pct": 0.2384
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+Spread dynamics regression: spread_t = alpha + rho * spread_lag1 + error_t
+==============================================================================
+Dataset:                        C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Observations (after lag):       305223
+Event clusters (event_date):    59
+(event_date, strike_K) series:  472
+
+Coefficients (cluster-robust SE by event_date):
+  alpha (const):       0.001064
+  rho (spread_lag1):   0.926304
+
+R-squared:             0.855079
+Adjusted R-squared:    0.855078
+
+Hypothesis tests:
+  H0: alpha = 0
+    t-statistic: 11.811383
+    p-value:     3.40908e-32
+  H0: rho = 0
+    t-statistic: 189.268177
+    p-value:     0
+  H0: rho = 1
+    t-statistic: -15.058003
+    p-value:     3.05888e-51
+
+Economic interpretation:
+- rho measures the persistence of probability spreads. Values close to 1 indicate highly persistent deviations between Polymarket and options, whereas values near 0 indicate rapid mean reversion.
+- Clustering by event_date allows dependence within an event (across strikes and timestamps) while treating different events as independent clusters.

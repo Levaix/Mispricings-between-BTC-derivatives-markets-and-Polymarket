@@ -1,0 +1,29 @@
+Information Flow (Lead–Lag Tests)
+========================================================================
+Dataset:                        C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Observations after differencing: 304751
+Event clusters (event_date):    59
+(event_date, strike_K) series:  472
+
+Regression A (Options → Prediction Markets):
+  d_prob_yes_t = alpha_A + beta_A * d_prob_option_lag1 + error_A
+  alpha_A: -0.000157
+  beta_A :  0.255487
+  R^2 / adj R^2:  0.041057 /  0.041053
+  Tests:
+    H0: alpha_A = 0  -> t = -5.061145, p = 4.16747e-07
+    H0: beta_A  = 0  -> t = 24.633939, p = 5.47043e-134
+
+Regression B (Prediction Markets → Options):
+  d_prob_option_t = alpha_B + beta_B * d_prob_yes_lag1 + error_B
+  alpha_B: -0.000108
+  beta_B :  0.080117
+  R^2 / adj R^2:  0.010169 /  0.010166
+  Tests:
+    H0: alpha_B = 0  -> t = -2.786621, p = 0.00532607
+    H0: beta_B  = 0  -> t = 11.165493, p = 6.01568e-29
+
+Interpretation:
+- If beta_A > 0 and statistically significant, changes in option-implied probabilities tend to precede and predict changes in Polymarket probabilities (options lead prediction markets).
+- If beta_B > 0 and statistically significant, changes in Polymarket probabilities tend to precede and predict changes in option-implied probabilities (prediction markets lead options).
+- Clustering by event_date accounts for within-event correlation in shocks across strikes and timestamps, while treating events as independent clusters.

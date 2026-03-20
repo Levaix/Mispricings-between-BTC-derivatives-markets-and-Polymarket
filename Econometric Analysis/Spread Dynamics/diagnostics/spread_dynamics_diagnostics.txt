@@ -1,0 +1,14 @@
+Spread dynamics diagnostics
+========================================
+Dataset path:                            C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Total input rows:                        305695
+Rows used after lag construction:        305223
+Unique event_date clusters:              59
+Unique (event_date, strike_K) series:    472
+Lag constructed within (event_date, strike_K): YES
+Regression ran successfully:             YES
+
+Outputs created:
+  - spread_dynamics_results.csv
+  - spread_dynamics_summary.txt
+  - spread_dynamics_fit.png

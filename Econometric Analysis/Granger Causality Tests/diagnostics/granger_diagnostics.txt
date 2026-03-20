@@ -1,0 +1,9 @@
+Granger causality diagnostics
+========================================
+Rows used after aggregation: 16662
+Timestamp range: 2026-01-01 00:10:00+00:00 to 2026-02-28 16:55:00+00:00
+Tests ran successfully: YES
+
+Outputs created:
+  - granger_causality_results.csv
+  - granger_causality_summary.txt

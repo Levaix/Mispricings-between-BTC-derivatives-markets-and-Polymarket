@@ -1,0 +1,234 @@
+{
+  "files_processed": 59,
+  "files_skipped": 0,
+  "skip_details": [],
+  "raw_rows_read": 839558,
+  "rows_kept": 839558,
+  "rows_dropped_by_reason": {},
+  "aggregated_rows": 342203,
+  "buckets_per_date": {
+    "2026-01-01": 2721,
+    "2026-01-02": 6125,
+    "2026-01-03": 2656,
+    "2026-01-04": 3248,
+    "2026-01-05": 6961,
+    "2026-01-06": 5315,
+    "2026-01-07": 4615,
+    "2026-01-08": 5043,
+    "2026-01-09": 5269,
+    "2026-01-10": 1619,
+    "2026-01-11": 2182,
+    "2026-01-12": 4385,
+    "2026-01-13": 6393,
+    "2026-01-14": 6736,
+    "2026-01-15": 4810,
+    "2026-01-16": 4932,
+    "2026-01-17": 1885,
+    "2026-01-18": 2119,
+    "2026-01-19": 4492,
+    "2026-01-20": 6421,
+    "2026-01-21": 6494,
+    "2026-01-22": 3667,
+    "2026-01-23": 5486,
+    "2026-01-24": 1915,
+    "2026-01-25": 4351,
+    "2026-01-26": 4660,
+    "2026-01-27": 4051,
+    "2026-01-28": 5210,
+    "2026-01-29": 7703,
+    "2026-01-30": 9534,
+    "2026-01-31": 8903,
+    "2026-02-01": 6069,
+    "2026-02-02": 9086,
+    "2026-02-03": 8652,
+    "2026-02-04": 9640,
+    "2026-02-05": 19906,
+    "2026-02-06": 17426,
+    "2026-02-07": 5330,
+    "2026-02-08": 4432,
+    "2026-02-09": 6184,
+    "2026-02-10": 4736,
+    "2026-02-11": 7127,
+    "2026-02-12": 5511,
+    "2026-02-13": 6296,
+    "2026-02-14": 2910,
+    "2026-02-15": 3056,
+    "2026-02-16": 3383,
+    "2026-02-17": 4253,
+    "2026-02-18": 5087,
+    "2026-02-19": 4504,
+    "2026-02-20": 6196,
+    "2026-02-21": 2416,
+    "2026-02-22": 2505,
+    "2026-02-23": 8323,
+    "2026-02-24": 7500,
+    "2026-02-25": 10195,
+    "2026-02-26": 6683,
+    "2026-02-27": 7295,
+    "2026-02-28": 7601
+  },
+  "top20_by_contracts_sum": [
+    {
+      "instrument_name": "BTC-27MAR26-60000-P",
+      "contracts_sum": 25750.6
+    },
+    {
+      "instrument_name": "BTC-27MAR26-70000-P",
+      "contracts_sum": 17674.3
+    },
+    {
+      "instrument_name": "BTC-27MAR26-90000-C",
+      "contracts_sum": 15884.0
+    },
+    {
+      "instrument_name": "BTC-27MAR26-65000-P",
+      "contracts_sum": 15334.1
+    },
+    {
+      "instrument_name": "BTC-27FEB26-75000-C",
+      "contracts_sum": 14881.1
+    },
+    {
+      "instrument_name": "BTC-27MAR26-75000-C",
+      "contracts_sum": 14714.3
+    },
+    {
+      "instrument_name": "BTC-27MAR26-20000-P",
+      "contracts_sum": 14590.5
+    },
+    {
+      "instrument_name": "BTC-27FEB26-40000-P",
+      "contracts_sum": 14249.300000000001
+    },
+    {
+      "instrument_name": "BTC-27FEB26-100000-C",
+      "contracts_sum": 13653.3
+    },
+    {
+      "instrument_name": "BTC-30JAN26-88000-P",
+      "contracts_sum": 13602.7
+    },
+    {
+      "instrument_name": "BTC-27FEB26-65000-P",
+      "contracts_sum": 12769.8
+    },
+    {
+      "instrument_name": "BTC-27FEB26-70000-P",
+      "contracts_sum": 12344.1
+    },
+    {
+      "instrument_name": "BTC-27FEB26-50000-P",
+      "contracts_sum": 12159.1
+    },
+    {
+      "instrument_name": "BTC-27FEB26-60000-P",
+      "contracts_sum": 12069.6
+    },
+    {
+      "instrument_name": "BTC-30JAN26-98000-C",
+      "contracts_sum": 11082.8
+    },
+    {
+      "instrument_name": "BTC-27MAR26-80000-C",
+      "contracts_sum": 10580.0
+    },
+    {
+      "instrument_name": "BTC-27MAR26-75000-P",
+      "contracts_sum": 10483.1
+    },
+    {
+      "instrument_name": "BTC-27FEB26-75000-P",
+      "contracts_sum": 10393.8
+    },
+    {
+      "instrument_name": "BTC-25DEC26-120000-C",
+      "contracts_sum": 10229.0
+    },
+    {
+      "instrument_name": "BTC-30JAN26-85000-P",
+      "contracts_sum": 10123.6
+    }
+  ],
+  "top20_by_trade_count": [
+    {
+      "instrument_name": "BTC-27MAR26-60000-P",
+      "trade_count": 4908
+    },
+    {
+      "instrument_name": "BTC-27MAR26-70000-P",
+      "trade_count": 4881
+    },
+    {
+      "instrument_name": "BTC-27MAR26-85000-P",
+      "trade_count": 4427
+    },
+    {
+      "instrument_name": "BTC-27MAR26-65000-P",
+      "trade_count": 4336
+    },
+    {
+      "instrument_name": "BTC-27MAR26-20000-P",
+      "trade_count": 4216
+    },
+    {
+      "instrument_name": "BTC-27FEB26-65000-P",
+      "trade_count": 3939
+    },
+    {
+      "instrument_name": "BTC-27FEB26-80000-C",
+      "trade_count": 3915
+    },
+    {
+      "instrument_name": "BTC-27FEB26-60000-P",
+      "trade_count": 3906
+    },
+    {
+      "instrument_name": "BTC-26JUN26-70000-P",
+      "trade_count": 3818
+    },
+    {
+      "instrument_name": "BTC-27MAR26-85000-C",
+      "trade_count": 3510
+    },
+    {
+      "instrument_name": "BTC-27FEB26-70000-P",
+      "trade_count": 3491
+    },
+    {
+      "instrument_name": "BTC-27FEB26-75000-P",
+      "trade_count": 3384
+    },
+    {
+      "instrument_name": "BTC-27FEB26-70000-C",
+      "trade_count": 3335
+    },
+    {
+      "instrument_name": "BTC-27FEB26-100000-C",
+      "trade_count": 3212
+    },
+    {
+      "instrument_name": "BTC-27MAR26-100000-C",
+      "trade_count": 3171
+    },
+    {
+      "instrument_name": "BTC-27MAR26-90000-C",
+      "trade_count": 3149
+    },
+    {
+      "instrument_name": "BTC-27MAR26-50000-P",
+      "trade_count": 3082
+    },
+    {
+      "instrument_name": "BTC-27MAR26-55000-P",
+      "trade_count": 3042
+    },
+    {
+      "instrument_name": "BTC-26JUN26-85000-P",
+      "trade_count": 2967
+    },
+    {
+      "instrument_name": "BTC-27MAR26-75000-P",
+      "trade_count": 2855
+    }
+  ]
+}

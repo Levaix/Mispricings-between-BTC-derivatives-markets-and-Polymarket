@@ -1,0 +1,24 @@
+News Events EDA – Diagnostics
+================================
+Dataset path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Manual News Event Identification\outputs\btc_news_events_final.csv
+Row count: 10
+Timestamp range (UTC): 2026-01-06T15:00:00+00:00 to 2026-02-18T14:00:00+00:00
+
+Number of crypto_bitcoin events: 5
+Number of macro events: 5
+Number of distinct sources: 2
+
+Script status: SUCCESS
+
+Tables created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\tables\news_event_hour_summary.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\tables\news_category_counts.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\tables\news_source_counts.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\tables\news_event_timeline.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\tables\news_eda_summary.md
+
+Figures created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\figures\news_event_timeline.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\figures\news_category_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\figures\news_event_hour_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\News\figures\news_event_weekday_distribution.png

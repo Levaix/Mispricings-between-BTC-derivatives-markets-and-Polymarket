@@ -1,0 +1,8 @@
+Granger causality tests – futures and probability changes
+========================================================================
+Probability dataset: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Futures dataset:     C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+Observations used in time series: 16662
+Timestamp range: 2026-01-01 00:10:00+00:00 to 2026-02-28 16:55:00+00:00
+
+Note: The original panel (event_date, strike_K) is collapsed to a single time series by averaging probability changes across contracts at each timestamp. This is required because standard Granger causality tests operate on univariate (or multivariate) time series, not panels.

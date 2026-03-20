@@ -1,0 +1,51 @@
+{
+  "options_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Options Deribit\\options_5m_agg\\agg_5m_merged.parquet",
+  "events_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Polymarket\\polymarket_contracts_metadata.parquet",
+  "polymarket_long_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Polymarket\\polymarket_probabilities_5m_long.parquet",
+  "parse_stats": {
+    "parse_fail_rows": 0,
+    "bad_expiry_rows": 0
+  },
+  "iv_stats": {
+    "iv_median_raw": 49.199999999999996,
+    "iv_scale_decision": "percent_to_decimal",
+    "iv_scale_factor": 0.01
+  },
+  "summary": {
+    "total_windows": 365378,
+    "fit_success_count": 190674,
+    "fit_fail_counts": {
+      "too_few_strikes": 172028,
+      "range_too_small": 2676
+    },
+    "n_event_rows": 1228495,
+    "row_count_polymarket_long": 1228495,
+    "row_count_event_iv_output": 1228495,
+    "row_count_match_ok": true,
+    "duplicate_event_keys": 0,
+    "invalid_expiry_assignments": 0,
+    "out_of_range_count": 240064,
+    "no_snapshot_fit_count": 785482,
+    "usable_iv_count": 202949,
+    "pct_rows_usable_iv": 16.52,
+    "pct_rows_out_of_range": 19.54,
+    "pct_rows_no_snapshot_fit": 63.94,
+    "same_day_expiry_count": 1159298,
+    "next_day_expiry_count": 69197,
+    "snapshot_stats_sanity": {
+      "n_unique_timestamps": 16906,
+      "n_snapshot_rows": 365378,
+      "avg_rows_per_timestamp": 21.61
+    },
+    "validation_one_row_per_timestamp": false,
+    "validation_warning": null,
+    "expiry_switch": {
+      "polymarket_daily_expiry_switch_rule": true,
+      "description": "For Polymarket event date Z: option expiry = Z if t <= Z 08:00 UTC, else Z+1.",
+      "event_rows_same_day_expiry": 1159298,
+      "event_rows_next_day_expiry": 69197,
+      "event_rows_next_day_expiry_no_fit": 15098
+    },
+    "validation_expiry_warning": null
+  }
+}

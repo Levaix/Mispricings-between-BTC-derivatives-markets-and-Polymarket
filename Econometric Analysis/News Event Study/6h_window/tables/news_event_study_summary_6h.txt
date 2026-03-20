@@ -1,0 +1,31 @@
+News Event Study – 6-hour Window Summary
+============================================
+
+Number of events: 10
+  crypto_bitcoin: 5
+  macro:          5
+
+Row counts by regime:
+  normal:    271508
+  pre_event: 17193
+  post_event:16994
+
+Mean |probability spread| by regime:
+  normal   : 0.027425
+  pre_event: 0.025392
+  post_event: 0.027765
+
+Key t-tests on abs_spread (difference in means, Welch t-tests, 6h window):
+- A_pre_vs_normal_6h: pre_event vs normal, diff = -0.002033, t = -8.894, p = 6.38e-19, n1 = 17193, n2 = 271508
+- B_post_vs_normal_6h: post_event vs normal, diff = 0.000340, t = 1.146, p = 0.252, n1 = 16994, n2 = 271508
+- C_post_vs_pre_6h: post_event vs pre_event, diff = 0.002373, t = 6.563, p = 5.35e-11, n1 = 16994, n2 = 17193
+- D_crypto_post_vs_macro_post_6h: crypto_bitcoin_post vs macro_post, diff = 0.004076, t = 7.075, p = 1.55e-12, n1 = 8417, n2 = 8577
+
+Outputs created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_regime_summary_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_category_summary_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_tests_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\tables\news_event_level_summary_6h.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\figures\event_time_abs_spread_6h.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\figures\abs_spread_by_regime_boxplot_6h.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Econometric Analysis\News Event Study\6h_window\figures\abs_spread_by_category_6h.png

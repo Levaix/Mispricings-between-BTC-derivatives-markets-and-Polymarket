@@ -1,0 +1,14 @@
+Futures market extension diagnostics
+========================================
+Probability dataset:          C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Futures dataset:              C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+Rows after merge:             305695
+Rows used in regressions:     305223
+Unique event_date clusters:   59
+Regressions ran successfully: YES
+
+Outputs created:
+  - futures_information_flow_results.csv
+  - futures_information_flow_summary.txt
+  - futures_prediction_market_response.png
+  - futures_option_response.png

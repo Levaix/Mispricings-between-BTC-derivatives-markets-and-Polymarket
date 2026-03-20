@@ -1,0 +1,8 @@
+{
+  "total_expected_event_rows": 5523045,
+  "n_unique_event_dates": 59,
+  "avg_strikes_per_day": 11.0,
+  "avg_markets_active_per_timestamp": 11.0,
+  "n_unique_options_timestamps": 16906,
+  "n_timestamp_event_date_pairs": 502095
+}

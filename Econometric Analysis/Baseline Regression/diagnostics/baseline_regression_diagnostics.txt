@@ -1,0 +1,18 @@
+Baseline regression diagnostics
+========================================
+Dataset path:                          C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Total input rows:                      305695
+Rows used in regression sample:        305695
+Unique event_date clusters (regress.): 59
+
+Regression sample ranges:
+  prob_yes   min/max: 0.000500 / 0.999500
+  prob_option min/max: 0.000000 / 1.000000
+
+event_date missing in regression sample: NO
+Regression ran successfully:            YES
+
+Outputs created:
+  - baseline_regression_results.csv
+  - baseline_regression_summary.txt
+  - baseline_regression_fit.png

@@ -1,0 +1,31 @@
+Options EDA – Diagnostics
+==========================
+Dataset path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options Deribit\options_5m_agg\agg_5m_merged.parquet
+Row count: 342203
+Timestamp range: 2026-01-01T00:00:00+00:00 to 2026-02-28T23:55:00+00:00
+Expiry range:    2026-01-01T00:00:00+00:00 to 2026-12-25T00:00:00+00:00
+IV min/max:      0.000000 / 999.000000
+Moneyness min/max: 0.205787 / 5.830986
+
+Number of calls: 179979
+Number of puts:  162224
+
+Script status: SUCCESS
+
+Tables created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\tables\options_summary_stats.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\tables\options_summary_stats.md
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\tables\options_type_counts.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\tables\options_type_counts.md
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\tables\options_eda_summary.md
+
+Figures created:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\iv_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\moneyness_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\iv_vs_moneyness.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\iv_vs_maturity.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\strike_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\index_price_timeseries.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\example_volatility_smile.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\contracts_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Options\figures\notional_distribution.png

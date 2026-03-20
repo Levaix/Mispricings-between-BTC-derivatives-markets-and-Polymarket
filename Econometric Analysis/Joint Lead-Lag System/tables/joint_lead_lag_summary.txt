@@ -1,0 +1,24 @@
+Joint Lead–Lag Information Flow System
+========================================================================
+Probability dataset: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Futures dataset:     C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+Rows after merge & filtering: 304751
+Event clusters (event_date):  59
+
+MODEL 1: What moves prediction markets?
+  d_prob_yes_t = alpha + beta1 * futures_return_lag1 + beta2 * d_prob_option_lag1 + error
+  alpha: -0.000157
+  beta1 (futures → PM):            0.123617
+  beta2 (options → PM):            0.255492
+  R^2:  0.041067
+
+MODEL 2: What moves options?
+  d_prob_option_t = alpha + gamma1 * futures_return_lag1 + gamma2 * d_prob_yes_lag1 + error
+  alpha: -0.000107
+  gamma1 (futures → options):      0.908323
+  gamma2 (PM → options):           0.080129
+  R^2:  0.011081
+
+Interpretation:
+- beta1/gamma1 capture how futures returns feed into PM and options, while beta2/gamma2 capture cross-effects between PM and options.
+- Clustering by event_date accounts for within-event dependence while treating different events as independent clusters.

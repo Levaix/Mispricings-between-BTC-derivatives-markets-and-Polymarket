@@ -1,0 +1,17 @@
+Dataset equality check (key variables)
+======================================
+
+Row counts:
+  options_smile_event_probabilities.parquet:  1228495
+  btc_probability_comparison_empirical_master.parquet:  305695
+
+Key statistics (full: rows with non-null probability_spread; master: all rows):
+
+                         full (valid rows)    master
+  n rows                305695              305695
+  mean(probability_spread)   0.0153703239   0.0153703239
+  median(probability_spread) 0.0103881003   0.0103881003
+  mean(prob_option)          0.2381907468   0.2381907468
+  mean(prob_yes)             0.2535610707   0.2535610707
+
+Result: Statistics are IDENTICAL (and row counts match).

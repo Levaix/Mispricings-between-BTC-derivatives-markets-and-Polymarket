@@ -1,0 +1,53 @@
+Code/  (project root)
+|
++-- Actual data/
+|   +-- Option Probabilities/           (or "Options N(d2) + Polymarket"): options_smile_event_probabilities.*
+|   +-- Polymarket/                     polymarket_probabilities_5m_long, contracts_metadata, qa_*
+|   +-- Futures Binance/                 qa_futures_binance.*
+|   +-- Spot Binance/                   spot_5m.*, spot_5m_qa.*
+|   +-- Options Deribit/                history_trades/date=.../trades.*, options_5m_agg/, instruments_*, universe_*
+|   +-- _QA/                            Options Deribit qa_report, top3_daily_volume_by_expiry
+|   +-- btc_probability_comparison_empirical_master.parquet   (if built)
+|
++-- Probability Extraction with Interpolation/
+|   +-- Actual Interpolation Method/
+|   |   +-- 3h_window_staleness120_min3_gap10k/   Method 4: options_smile_event_iv.*, build_options_smiles_3h_stale120_min3_gap10k.py
+|   +-- Old Interpolation Methods/
+|   |   +-- 3h_window_staleness90_min3_gap10k/
+|   |   +-- 3h_window_staleness90_min5/
+|   |   +-- 1h_window_no_staleness_min5/
+|   +-- probability_dataset_diagnostics/         build_option_probability_dataset.py, summary/spread JSON, plots/
+|   +-- subsets/
+|   |   +-- probability_comparison_empirical/    build_empirical_master.py, dataset_diagnostics.txt
+|   +-- Robustness/                              iv_hat_diagnostics.*, robustness_method_comparison.*, build_robustness_comparison.py
+|   +-- Scripts/                                iv_hat_diagnostics.py, options_iv_timestamp_coverage.py
+|
++-- Probability Extraction without interpolation/   (folder may be empty or separate workflow)
+|
++-- pipeline/
+|   +-- Deribit Options Download - moneyness/     history_trades_probe, aggregate_trades_5m, run, config, merge_qa, qa_report, plots, ...
+|   +-- Binance Futures Download/                 futures_binance_btcusdt.py
+|   +-- Binance Spot Download/                    spot_binance_btcusdt_5m.py
+|   +-- step1_qa_alignment.py                     (backfill-path: QA + master 5m panel from ./data/ -> ./outputs/)
+|
++-- scripts/
+|   +-- run_pipeline.py                           backfill + step1_qa_alignment
+|   +-- backfill_binance_oct_dec_2025.py           spot + futures from downloaders (writes to ./data/)
+|   +-- run_step4_polymarket_download.py          Polymarket -> Actual data/Polymarket
+|   +-- run_step1_qa_alignment.py                 Step 1 only -> ./outputs/window=.../
+|   +-- run_options_v2_moneyness.py               Deribit options pipeline entry
+|   +-- inspect_datasets.py, inspect_spot_partitions.py, step5_build_master_panel.py, clear_spot_done_chunks.py
+|
++-- tests/
+|   +-- check_probability_bounds.py, probability_bounds_report.txt
+|   +-- check_dataset_equality.py, dataset_equality_report.txt
+|   +-- diagnostic_polymarket_expected_event_rows.*, polymarket_march_test.py
+|   +-- folder_structure.txt, verify_1h_smile_duplicate_strikes.md
+|
++-- utils/
++-- _archive/                          archived legacy (e.g. options_legacy_20260214)
+|
++-- config.py, README.md, requirements.txt, binance_client.py, .gitignore
+
+Note: If you also have an "analysis/" and "downloaders/" layout (e.g. analysis/3h_window_..., downloaders/spot.py, futures.py),
+that is an alternate naming; the logic is the same. downloaders/options.py was removed; backfill imports spot/futures only or options via try/except.

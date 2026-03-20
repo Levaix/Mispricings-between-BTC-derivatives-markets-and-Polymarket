@@ -1,0 +1,23 @@
+Futures Market Extension – Information Flow
+========================================================================
+Probability dataset: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Options N(d2) + Polymarket - Econometric Testing\btc_probability_comparison_empirical_master.parquet
+Futures dataset:     C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+Rows after merge & filtering: 305223
+Event clusters (event_date):  59
+
+Regression A (Futures → Prediction Markets):
+  d_prob_yes_t = alpha_A + beta_A * futures_return_lag1 + error_A
+  alpha_A: -0.000194
+  beta_A :  0.113162
+  R^2:     0.000009
+
+Regression B (Futures → Options):
+  d_prob_option_t = alpha_B + beta_B * futures_return_lag1 + error_B
+  alpha_B: -0.000122
+  beta_B :  0.907328
+  R^2:     0.000910
+
+Interpretation:
+- If beta_A > 0 and statistically significant, futures returns tend to precede and predict changes in Polymarket probabilities.
+- If beta_B > 0 and statistically significant, futures returns tend to precede and predict changes in option-implied probabilities.
+- Clustering by event_date allows for correlated shocks within events while treating different events as independent clusters.

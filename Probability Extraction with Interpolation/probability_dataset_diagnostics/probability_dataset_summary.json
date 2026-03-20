@@ -1,0 +1,40 @@
+{
+  "input_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\analysis\\3h_window_staleness120_min3_gap10k\\options_smile_event_iv.parquet",
+  "output_path": "C:\\Users\\Levin\\OneDrive\\Dokumente\\Data Thesis\\Data Thesis\\Code\\Actual data\\Option Probabilities\\options_smile_event_probabilities.parquet",
+  "total_rows": 1228495,
+  "valid_iv_rows": 305695,
+  "rows_with_prob_option": 305695,
+  "pct_rows_with_prob_option": 24.8837,
+  "tau_years": {
+    "min": 9.512937595129377e-06,
+    "max": 0.01813165905631659,
+    "mean": 0.006294962046336861,
+    "median": 0.005460426179604262
+  },
+  "prob_option": {
+    "min": 4.177824663987891e-112,
+    "max": 1.0,
+    "mean": 0.23819074680716243,
+    "median": 0.10631300436760444
+  },
+  "filter_counts": {
+    "iv_hat_le_0": 2222,
+    "iv_hat_gt_3": 736,
+    "tau_years_le_0": 645,
+    "missing_or_invalid_spot": 382432,
+    "missing_or_invalid_strike": 0
+  },
+  "probability_spread": {
+    "min": -0.4803921447199593,
+    "max": 0.547,
+    "mean": 0.015370323867856748,
+    "median": 0.01038810034479215,
+    "p1": -0.11088412945800087,
+    "p5": -0.029600565762692075,
+    "p25": -0.00238169161718918,
+    "p50": 0.01038810034479215,
+    "p75": 0.03117859858117736,
+    "p95": 0.07275421506348219,
+    "p99": 0.1538363389820173
+  }
+}

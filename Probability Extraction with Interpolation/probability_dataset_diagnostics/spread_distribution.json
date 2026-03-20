@@ -1,0 +1,56 @@
+{
+  "n_valid_spread": 305695,
+  "bucket_distribution": [
+    {
+      "bucket": "<-0.20",
+      "count": 739,
+      "pct": 0.2417
+    },
+    {
+      "bucket": "-0.20 to -0.10",
+      "count": 3031,
+      "pct": 0.9915
+    },
+    {
+      "bucket": "-0.10 to -0.05",
+      "count": 6099,
+      "pct": 1.9951
+    },
+    {
+      "bucket": "-0.05 to -0.02",
+      "count": 10863,
+      "pct": 3.5535
+    },
+    {
+      "bucket": "-0.02 to 0.02",
+      "count": 171010,
+      "pct": 55.9414
+    },
+    {
+      "bucket": "0.02 to 0.05",
+      "count": 78428,
+      "pct": 25.6556
+    },
+    {
+      "bucket": "0.05 to 0.10",
+      "count": 27807,
+      "pct": 9.0963
+    },
+    {
+      "bucket": "0.10 to 0.20",
+      "count": 6262,
+      "pct": 2.0484
+    },
+    {
+      "bucket": ">0.20",
+      "count": 1456,
+      "pct": 0.4763
+    }
+  ],
+  "absolute_spread_thresholds": {
+    "abs_spread_gt_0_01": 190064,
+    "abs_spread_gt_0_02": 134685,
+    "abs_spread_gt_0_05": 45394,
+    "abs_spread_gt_0_10": 11488
+  }
+}

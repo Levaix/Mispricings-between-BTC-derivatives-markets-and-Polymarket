@@ -1,0 +1,36 @@
+Futures EDA – Diagnostics
+==========================
+Futures OHLCV path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_ohlcv_5m.parquet
+Mark dataset path:  C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\perp_mark_5m.parquet
+Funding dataset path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Futures Binance\funding_rate.parquet
+
+Futures OHLCV rows: 16992
+Mark rows:          16992
+Funding rows:       177
+
+Timestamp ranges:
+  Futures: 2026-01-01T00:00:00+00:00 to 2026-02-28T23:55:00+00:00
+  Mark:    2026-01-01T00:00:00+00:00 to 2026-02-28T23:55:00+00:00
+  Funding: 2026-01-01T00:00:00.008000+00:00 to 2026-02-28T16:00:00.004000+00:00
+
+Spot dataset loaded for basis: True
+  Spot path: C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\Actual data\Spot Binance\spot_5m.parquet
+Merged spot/futures rows (basis): 16992
+Basis timestamp range: 2026-01-01T00:00:00+00:00 to 2026-02-28T23:55:00+00:00
+
+Script status: SUCCESS
+
+Output tables:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\tables\futures_summary_stats.csv
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\tables\futures_basis_summary_stats.csv (if basis available)
+
+Output figures:
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\futures_and_mark_timeseries.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\funding_rate_timeseries.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\funding_rate_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\cumulative_funding.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\futures_return_distribution.png
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\spot_vs_futures_price_overlay.png (if basis available)
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\basis_timeseries.png (if basis available)
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\basis_distribution.png (if basis available)
+  - C:\Users\Levin\OneDrive\Dokumente\Data Thesis\Data Thesis\Code\EDA\Futures\figures\spot_vs_futures_returns_scatter.png (if basis available)
