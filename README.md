@@ -1,98 +1,14 @@
-# Thesis Data Pipeline (January–February 2026)
+# Thesis Objective (Jan–Feb 2026)
 
-This repository contains the code and generated outputs for the thesis analysis using **BTC market data from January–February 2026** (5-minute resolution).
+This thesis studies **mispricings between BTC derivatives markets (options and futures-implied expectations) and Polymarket**, focusing on how probability spreads behave over time and around curated news events.
 
-## Data produced
+## Folder overview (what each part shows)
 
-- **Spot:** BTCUSDT 5m OHLCV klines (Binance)
-- **USD-M Futures:** Perp 5m klines, mark price, index price, funding rate (Binance). Open interest and continuous quarterly klines are **off by default** (OI not available historically; use `--with-oi` / `--with-continuous` in backfill if needed).
-- **Options:** **v2 (moneyness-based)** pipeline rebuilds BTC options from Deribit for **January–February 2026**: moneyness-band universe, 5m candles, index proxy, QA report and plots. See `python scripts/run_options_v2_moneyness.py`.
-
-Output: **Parquet** under `./data/`; pipeline outputs go to **windowed subfolders** `./outputs/window=YYYY-MM-DD_YYYY-MM-DD/` (e.g. `outputs/window=2026-01-01_2026-02-28/`).
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-```
-
-Optional: set `BINANCE_API_KEY` if required for higher rate limits (not needed for public market data).
-
-## Run
-
-**Main pipeline (recommended):** Backfill Spot + Futures for the config window, then Step 1 QA + alignment (spot, futures, funding; no options until rebuilt).
-
-```bash
-python scripts/run_pipeline.py [--overwrite]
-python scripts/run_pipeline.py --start "2026-01-01 00:00:00" --end "2026-02-28 23:55:00" --overwrite
-python scripts/run_pipeline.py --no-backfill   # skip download, run Step 1 only
-```
-
-**Backfill only** (Spot + Futures; OI/continuous/options skipped by default):
-
-```bash
-python scripts/backfill_binance_oct_dec_2025.py
-python scripts/backfill_binance_oct_dec_2025.py --with-oi --with-continuous   # optional
-```
-
-Runs from the `Code` folder. Writes to `./data/`; pipeline outputs to `./outputs/window=2026-01-01_2026-02-15/`.
-
-## Verify downloaded data
-
-After the backfill (or if you see `startTime is invalid` or empty Futures/Options), check completeness:
-
-```bash
-python scripts/verify_downloaded_data.py
-```
-
-This compares expected chunks (from the config date range) with `data/_manifest/done_chunks.json`, counts Parquet rows for Spot, Futures, and Options, and reports missing chunks and total rows so you can see what was actually downloaded.
-
-**Inspect datasets before analysis** (schema, key variables, time range, sample stats):
-
-```bash
-python scripts/inspect_datasets.py
-```
-
-A static reference of key variables and merge keys is in `data/DATA_SCHEMA.md`.  
-A **detailed data overview** for analysis planning (variables, timestamps, merge strategy, limitations, suggested use) is in `data/DATA_OVERVIEW.md`.
-
-**Options v2 (moneyness-based):** `python scripts/run_options_v2_moneyness.py [--force-refresh]` — builds raw aligned options dataset and QA.
-
-Note: legacy archive code is not required for the January–February 2026 thesis results.
-
-## Step 1: Data QA + alignment (pipeline)
-
-Build the **master 5m panel** (one row per 5-minute bar with spot, perp, index, mark, and funding aligned by time), plus QA report and sanity plots.
-
-**What the master panel is:** One row per 5m bar. Spot close/volume, perp close/volume, index close, mark close, and funding rate are joined so you see spot and derivatives prices side by side.
-
-**Data needed:** Step 1 loads from `data/spot/...` and `data/futures/usdm_perp/...` for the January–February 2026 window.
-
-```bash
-python scripts/run_step1_qa_alignment.py [--overwrite]
-python scripts/run_step1_qa_alignment.py --start "2026-01-01 00:00:00" --end "2026-02-28 23:55:00" --overwrite
-```
-
-Outputs are written under **`./outputs/window=YYYY-MM-DD_YYYY-MM-DD/`**:
-
-- `master_panel_5m.parquet` — 5m grid with spot_*, perp_*, index_close, mark_close, funding_rate_5m, fundingTime_last
-- `qa_report.parquet` / `qa_report.csv` — QA summary (n_rows, time range, duplicates, missing share)
-- `plots/` — spot–index spread, perp–index basis, funding rate over time
-- Options outputs are handled by the options v2 pipeline (not by the main backfill/Step 1 alignment).
-
-## Layout
-
-- `config.py` — API URLs, **default window Jan–Feb 2026**, paths, rate limits (Binance + Deribit)
-- `utils/time.py` — ms ↔ UTC, chunk ranges, `parse_window_start_end`, `window_output_suffix`
-- `downloaders/spot.py` — Spot klines (Binance)
-- `downloaders/futures.py` — Futures (perp, mark, index, funding; OI/continuous off by default)
-- `downloaders/options.py` — Stub (options are rebuilt via the v2 moneyness-based scripts)
-- `scripts/backfill_binance_oct_dec_2025.py` — Backfill Spot + Futures (optional OI/continuous/options via flags)
-- `scripts/run_pipeline.py` — **Main runner:** backfill + Step 1; windowed outputs
-- `pipeline/step1_qa_alignment.py` — Step 1: load, standardize, master grid, funding/options alignment, QA report, plots
-- `scripts/run_step1_qa_alignment.py` — Run Step 1 only (optional `--start`/`--end`/`--options-liquid-path`; writes to `./outputs/window=.../`)
-
-## Rate limits
-
-- ~5 requests/second, 200 ms between calls
-- On HTTP 429/418: exponential backoff (1s, 2s, 4s, … max 60s), up to 8 retries
+- `Actual data/`: read-only datasets used in the empirical analysis (spot, futures, options-implied probabilities, Polymarket probabilities, and prepared “empirical master” panels).
+- `EDA/`: exploratory data analyses (distributions, event timing structure, and cross-market descriptive patterns).
+- `Econometric Analysis/`: econometric workflows and results (event studies, lead–lag systems, spread dynamics, and robustness).
+- `Probability Extraction with Interpolation/`: intermediate steps that map option-market information into **option-implied event probabilities** used in the comparison to Polymarket.
+- `Downloaders/`: reference scripts used to obtain and aggregate market data into `Actual data/`.
+- `tests/`: sanity checks supporting correctness of processing.
+- `utils/`: shared helper functions used across pipeline components.
+- `_archive/`: legacy/archived experiments and code not required for the January–February 2026 thesis results.
