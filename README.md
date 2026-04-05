@@ -1,3 +1,7 @@
+## About
+
+I am an undergraduate **dual-degree student in Business Administration (BBA) and Data Science**. My interests sit at the intersection of **algorithmic programming, statistical modelling, and market microstructure**—including **arbitrage**, **geopolitical and macro developments**, **major asset classes**, and **cross-asset correlations**. I have **hands-on Web3 experience**; prediction markets and digital assets are familiar terrain. I have contributed **research for a leading crypto venture capital firm** and **led a DAO** that served as its **research arm**. In this repository I built the **full empirical stack**—from raw Deribit, Binance, and Polymarket data through option-implied probabilities, exploratory analysis, and econometric work on **mispricings between BTC derivatives and Polymarket**.
+
 # Thesis Objective (Jan–Feb 2026)
 
 This thesis studies **mispricings between BTC derivatives markets (options and futures-implied expectations) and Polymarket**, focusing on how probability spreads behave over time and around curated news events.
